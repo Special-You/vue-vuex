@@ -9,14 +9,12 @@
 
 <script>
     // @ is an alias to /src
-    import HelloWorld from '@/components/HelloWorld.vue'
-    import ListOne from '@/components/ListOne.vue'
-    import ListTwo from '@/components/ListTwo.vue'
+    import ListOne from '@/components/Home/ListOne.vue'
+    import ListTwo from '@/components/Home/ListTwo.vue'
 
     export default {
         name: 'home',
         components: {
-            HelloWorld,
             ListOne,
             ListTwo
         },

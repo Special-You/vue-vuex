@@ -10,7 +10,9 @@ export default new Vuex.Store({
             {name:'键盘',price:'40'},
             {name:'耳机',price:'60'},
             {name:'显示屏',price:'80'},
-        ]
+        ],
+        testMsg:'原始文本',
+        childTest: '子组件原始文本'
     },
     getters:{
         saleProducts:(state)=>{
@@ -28,6 +30,12 @@ export default new Vuex.Store({
             let newPrice = state.products.forEach(product=>{
                 product.price -= payload
             })
+        },
+        changeTextMsg(state,str){
+            state.testMsg = str;
+        },
+        changeChildText(state,str){
+            state.childTest = str;
         }
     },
     actions:{
